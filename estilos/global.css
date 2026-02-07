@@ -282,3 +282,31 @@ footer {
     height: 140px;
   }
 }
+/* MENÚ RESPONSIVE PARA MÓVILES */
+@media (max-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        padding: 10px;
+    }
+
+    nav ul li a {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    .logo-header {
+        width: 60px;
+        height: 60px;
+    }
+
+    .titulo-header h1 {
+        font-size: 1.4rem;
+    }
+
+    .titulo-header p {
+        font-size: 0.8rem;
+    }
+}

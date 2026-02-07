@@ -1,0 +1,72 @@
+/* VARIABLES GLOBALES */
+:root {
+    --color-fondo: #0d0d0d;
+    --color-texto: #f2f2f2;
+    --color-acento: #ff6a00; /* Naranja Division */
+    --color-secundario: #1a1a1a;
+
+    --fuente-principal: 'Segoe UI', Arial, sans-serif;
+
+    --padding-base: 15px;
+    --borde-redondo: 6px;
+}
+
+/* ESTILOS GENERALES */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: var(--fuente-principal);
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--color-secundario);
+    border-bottom: 2px solid var(--color-acento);
+}
+
+header h1 {
+    margin: 0;
+    color: var(--color-acento);
+}
+
+/* MENÚ GLOBAL */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: var(--color-secundario);
+}
+
+nav a {
+    color: var(--color-texto);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: var(--borde-redondo);
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--color-acento);
+    color: #000;
+}
+
+/* CONTENIDO */
+main {
+    padding: var(--padding-base);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: var(--color-secundario);
+    border-top: 2px solid var(--color-acento);
+}
